@@ -15,6 +15,7 @@ public class Ju82 extends AbstractAirplane implements Airplane {
         super("Ju82", AirplaneTypes.BOMBER, 18);
     }
 
+    @Override
     public String description() {
         return DESCRIPTION_TEXT + " " + super.description();
     }

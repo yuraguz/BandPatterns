@@ -15,6 +15,7 @@ public class Pe2 extends AbstractAirplane implements Airplane {
         super("Pe2", AirplaneTypes.ATTACK_PLANE, 12);
     }
 
+    @Override
     public String description() {
         return DESCRIPTION_TEXT + " " + super.description();
     }

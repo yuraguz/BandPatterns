@@ -1,7 +1,7 @@
-package generating.factorymethod;
+package generating.factorymethod.USSR;
 
-import generating.factorymethod.USSRTanks.KV1_Tank;
-import generating.factorymethod.USSRTanks.T34_Tank;
+import generating.factorymethod.USSR.tanks.KV1_Tank;
+import generating.factorymethod.USSR.tanks.T34_Tank;
 import generating.factorymethod.interfaces.Tank;
 import generating.factorymethod.interfaces.TankCreator;
 

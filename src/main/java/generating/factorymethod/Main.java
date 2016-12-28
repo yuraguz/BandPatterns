@@ -1,5 +1,6 @@
 package generating.factorymethod;
 
+import generating.factorymethod.USSR.USSRTankCreator;
 import generating.factorymethod.interfaces.Tank;
 import generating.factorymethod.interfaces.TankCreator;
 

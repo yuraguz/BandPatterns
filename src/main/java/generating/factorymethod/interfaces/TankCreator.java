@@ -6,6 +6,12 @@ package generating.factorymethod.interfaces;
 public interface TankCreator {
 
 
-    // fabric method
+    // fabric methods
     Tank getTank(String name);
+    Tank createT34();
+    Tank createKV1();
+
+    // make army
+    public void makeArmy();
+
 }

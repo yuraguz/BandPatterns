@@ -10,6 +10,14 @@ import generating.factorymethod.interfaces.TankCreator;
  */
 public class USSRTankCreator implements TankCreator {
 
+    public Tank createT34() {
+        return new T34_Tank();
+    }
+
+    public Tank createKV1() {
+        return new KV1_Tank();
+    }
+
     public Tank getTank(String name) {
 
         if ("t34".equals(name)) {
@@ -21,4 +29,10 @@ public class USSRTankCreator implements TankCreator {
         return null;
 
     }
+
+    public void makeArmy() {
+        System.out.println(createT34().getDescription());
+        System.out.println(createKV1().getDescription());
+    }
+
 }

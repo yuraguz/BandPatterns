@@ -25,9 +25,7 @@ public class USSRTankCreator implements TankCreator {
         } else if ("kv1".equals(name)) {
             return new KV1_Tank();
         }
-
-        System.out.println("sdf");
-
+        
 
         return null;
 

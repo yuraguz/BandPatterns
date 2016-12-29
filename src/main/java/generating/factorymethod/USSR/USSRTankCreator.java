@@ -37,6 +37,7 @@ public class USSRTankCreator implements TankCreator {
     public void makeArmy() {
         System.out.println(createT34().getDescription());
         System.out.println(createKV1().getDescription());
+        System.out.println(createKV1().getDescription());
     }
 
 }

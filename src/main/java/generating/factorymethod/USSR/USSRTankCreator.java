@@ -36,6 +36,7 @@ public class USSRTankCreator implements TankCreator {
         System.out.println(createT34().getDescription());
         System.out.println(createKV1().getDescription());
         System.out.println(createKV1().getDescription());
+        System.out.println(createKV1().getDescription());
     }
 
 }

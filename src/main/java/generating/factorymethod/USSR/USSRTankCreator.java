@@ -28,6 +28,7 @@ public class USSRTankCreator implements TankCreator {
 
         System.out.println("TEST");
         System.out.println("It is from TestBranch1");
+        System.out.println("It is from TestBtanch1 too");
 
         return null;
 

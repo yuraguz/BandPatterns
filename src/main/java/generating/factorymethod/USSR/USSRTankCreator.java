@@ -27,6 +27,9 @@ public class USSRTankCreator implements TankCreator {
         }
 
         System.out.println("TEST");
+        System.out.println("From master");
+        System.out.println("From master 1");
+
 
         return null;
 

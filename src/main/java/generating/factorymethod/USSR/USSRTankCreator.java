@@ -26,6 +26,8 @@ public class USSRTankCreator implements TankCreator {
             return new KV1_Tank();
         }
 
+        System.out.println("TEST");
+
         return null;
 
     }

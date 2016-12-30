@@ -20,13 +20,13 @@ public class Main {
 
         try {
 
-            // ключ, полученный от клиента
+            // РєР»СЋС‡, РїРѕР»СѓС‡РµРЅРЅС‹Р№ РѕС‚ РєР»РёРµРЅС‚Р°
             String keyFromClient = "individual";
 
-            // поиск и выбор стратегии
+            // РїРѕРёСЃРє Рё РІС‹Р±РѕСЂ СЃС‚СЂР°С‚РµРіРёРё
             judgeSelectionStrategy = chooseStrategy(keyFromClient);
 
-            // выполнение алгоритма
+            // РІС‹РїРѕР»РЅРµРЅРёРµ Р°Р»РіРѕСЂРёС‚РјР°
             System.out.println(judgeSelectionStrategy.execute());
 
         } catch (Exception e) {

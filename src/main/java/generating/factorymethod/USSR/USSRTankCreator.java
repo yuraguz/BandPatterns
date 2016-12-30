@@ -26,9 +26,8 @@ public class USSRTankCreator implements TankCreator {
             return new KV1_Tank();
         }
 
-        System.out.println("Master branch");
-        System.out.println("Master branch");
-
+        System.out.println("My new branch");
+        System.out.println("LOL");
 
         return null;
 

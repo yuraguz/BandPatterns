@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Factory (Singleton) для стратегий, определяющих тип суда
- * для физ./юр. лиц и индивидуальных предпринимателей
+ * Factory (Singleton) РІС‹Р±РёСЂР°РµС‚ СЃС‚СЂР°С‚РµРіРёСЋ, РѕРїСЂРµРґРµР»СЏСЋС‰СѓСЋ С‚РёРї СЃСѓРґР°
+ * РґР»СЏ С„РёР·./СЋСЂ. Р»РёС† Рё РёРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹С… РїСЂРµРґРїСЂРёРЅРёРјР°С‚РµР»РµР№
  *
  * Created by guz_us on 30.12.2016.
  */
@@ -22,17 +22,16 @@ public class JudgeStrategyFactory {
 
     private static JudgeStrategyFactory instance;
 
-    // хранилище стратегий
+    // С…СЂР°РЅРёР»РёС‰Рµ СЃС‚СЂР°С‚РµРіРёР№
     private Map<String, JudgeSelectionStrategy> strategies = new HashMap<>();
 
-    // конструктор заполняет хранилище стратегий
+    // РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ С…СЂР°РЅРёР»РёС‰Р° РІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРµ
     private JudgeStrategyFactory() {
         strategies.put( INDIVIDUAL_STRATEGY_KEY, new JudgeSelectionForIndividual() );
         strategies.put( JUR_STRATEGY_KEY, new JudgeSelectionForJur() );
         strategies.put( ENTERPRENEUR_STRATEGY_KEY, new JudgeSelectionForEnterpreneur() );
     }
 
-    // получение стратегии по ключу
     public JudgeSelectionStrategy getStrategyByKey(String key) {
         return strategies.get(key);
     }
@@ -44,7 +43,7 @@ public class JudgeStrategyFactory {
         return instance;
     }
 
-    // инициализация фабрики
+    // РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ factory
     private static synchronized void setInstance() {
         instance = new JudgeStrategyFactory();
     }

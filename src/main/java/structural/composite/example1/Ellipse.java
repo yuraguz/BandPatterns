@@ -1,6 +1,8 @@
 package structural.composite.example1;
 
 /**
+ * Подобъект компоновщика
+ *
  * Created by guz_us on 14.03.2017.
  */
 public class Ellipse implements Graphic {

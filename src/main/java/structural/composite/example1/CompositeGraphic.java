@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Реализация компоновщика
+ *
  * Created by guz_us on 14.03.2017.
  */
 public class CompositeGraphic implements Graphic {
